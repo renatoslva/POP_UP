@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="shortcut icon" href="/public/img/logo.png" type="image/x-icon">
+  <title>Hematomas Tecnologia</title>
+</head>
+
+<body>
+
+  <div class="flex items-center justify-center w-full min-h-screen bg-red-900">
+    <!-- Botão para abrir o container -->
+    <button id="openButton"
+      class="fixed px-5 py-3 text-white bg-blue-500 rounded-full hover:bg-blue-600 top-4 right-4 md:top-8 md:right-11 md:px-4 md:py-2 md:text-base">
+      Open
+    </button>
+
+    <!-- Container (inicialmente oculto) -->
+    <div id="shareContainer"
+      class="relative w-full max-w-[95vw] p-4 mx-auto mt-5 transition-opacity duration-300 bg-gray-200 border border-gray-200 rounded-xl shadow-lg opacity-0 md:max-w-md lg:max-w-lg">
+
+      <button
+        class="absolute p-4 text-lg bg-transparent border-none rounded-full cursor-pointer close-btn top-3 right-3 hover:bg-red-400">&times;</button>
+      <h2 class="text-xl text-customblue md:text-2xl">Compartilhe esse desafio</h2>
+      <p class="flex flex-col flex-1 p-2 mt-6 text-sm rounded-lg md:flex-row md:mt-10 link-container gap-y-2">Inspire colaboração! Compartilhe com seus amigos e
+        espalhe conhecimento!!!</p>
+      <div class="flex flex-col flex-1 p-3 mt-10 text-sm rounded-lg md:flex-row link-container">
+        <input type="text" id="shareLink" class="flex-1 p-2 border-2 border-red-500 rounded-t-md md:rounded-l-full md:rounded-r-none focus:outline-none"
+          value="https://renatoslva.github.io/portifolio2.0.1/#portfolio" readonly>
+        <button
+          class="px-4 py-2 text-white transition duration-300 ease-out bg-red-500 border-2 border-red-500 cursor-pointer rounded-b-md md:rounded-r-full md:rounded-l-none hover:bg-red-600"
+          id="copyButton" onclick="copyLink()">COPIAR LINK</button>
+      </div>
+      <div class="flex flex-wrap items-center justify-between mt-4 social-container">
+        <a href="https://github.com/renatoslva" target="_blank">
+          <img class="p-2 m-1 bg-red-900 border-2 rounded-full cursor-pointer hover:bg-customGreen"
+            src="/public/img/svg_github.png.png" alt="github">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img class="p-2 m-1 bg-red-900 border-2 rounded-full cursor-pointer hover:bg-customGreen"
+            src="/public/img/svg_instagram_(1).png.png" alt="instagram">
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img class="p-2 m-1 bg-red-900 border rounded-full cursor-pointer hover:bg-customGreen"
+            src="/public/img/svg_linkedin.png.png" alt="linkedin">
+        </a>
+        <a href="https://pinterest.com" target="_blank">
+          <img class="p-2 m-1 bg-red-900 border-2 rounded-full cursor-pointer hover:bg-customGreen"
+            src="/public/img/svg_pinterest.png.png" alt="pinterest">
+        </a>
+        <a href="https://stackoverflow.com" target="_blank">
+          <img class="p-2 m-1 bg-red-900 border-2 rounded-full cursor-pointer hover:bg-customGreen"
+            src="/public/img/svg_stackoverflow.png.png" alt="stackoverflow">
+        </a>
+        <a href="https://whatsapp.com" target="_blank">
+          <img class="p-2 m-1 bg-red-900 border-2 rounded-full cursor-pointer hover:bg-customGreen"
+            src="/public/img/svg_whatsapp.png.png" alt="whatsapp">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
